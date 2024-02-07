@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# Done: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -26,7 +26,21 @@
 #   Once each function has done its calculation, it should return the result.
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
+#
 ###############################################################################
+def add(number1, number2): 
+    return number1 + number2
+
+def subtract(number1, number2):
+    return number2 - number1
+
+def multiply(number1, number2):
+    return number1 * number2
+
+def divide(number1, number2):
+    return number2 / number1
+number1 = 3
+number2 = 9
 
 ###############################################################################
 # TODO: 2. (8 pts)
@@ -59,6 +73,20 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+    print("Welcome to the Calculator!")
+    num1 = float(input("Please enter the first number: "))
+
+    num2 = float(input("Please enter the second number: "))
+
+    print("Add:", add(num1, num2))
+    print("Subtract:", subtract(num1, num2))
+    print("Multiply:", multiply(num1, num2))
+    print("Divide:", divide(num1, num2))
+
+    print("Thank you for using the Friendly Calculator! Goodbye!")
+
+main()
 
 ###############################################################################
 # TODO: 3. EXTRA CREDIT (4 pts)
